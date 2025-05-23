@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TODO List App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="./output.css" />
+</head>
+<body class="overflow-x-hidden">
+  <div class="flex justify-center">
+    <div class="relative w-screen h-screen scroll-mb-0">
+      <img src="/images/todo.jfif" alt="" class="object-cover   w-screen h-screen " />
+    </div>
+    <div class="absolute lg:right-10 flex flex-col text-center lg:top-[10%] top-1/6" id="container">
+      <div class="mb-5">
+        <h1 class=" lg:text-4xl font-semibold  text-2xl text-fuchsia-700" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">TODO LIST APP</h1>
+      </div>
+
+      <div id="content" class="bg-white/70 lg:w-full justify-center  items-center   lg:p-8 p-4 rounded space-x-2 flex flex-row">
+        <input type="text" placeholder="Enter Your Task"
+          class="border lg:text-lg rounded  lg:w-80 w-55 text-center p-1 font-medium focus:outline focus:outline-fuchsia-800 focus:border-fuchsia-800" />
+        <button id="button" class=" bg-fuchsia-700 text-white rounded lg:px-4 lg:py-1.5 px-2 py-1.5 lg:w-20 font-medium hover:cursor-pointer lg:text-lg">Add</button>
+      </div>
+
+      <div id="task" class="lg:mt-10 mt-5 rounded   space-y-2 lg:space-y-3">
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
